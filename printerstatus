@@ -4,3 +4,4 @@ count=0
 while read li; do
 	echo $li
 done < <(octoprint-cli print status)
+#Luke is dumb
