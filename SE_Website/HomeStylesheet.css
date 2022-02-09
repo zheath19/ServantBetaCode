@@ -114,3 +114,31 @@ button {
 .navbar {
     margin-top: 15px;
 }
+
+/* Well Plate Animation */
+#cell-grid {
+    height: 35%;
+    width: 35%;
+    border: 1px solid black;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+.circle {
+    z-index: 10;
+    background-color: white;
+    border:2px solid black;
+    border-radius:50%;
+    width:33%;
+    float:left;
+    margin:0;
+    padding:0;
+}
+.cell-row{
+    clear:left;
+}
+
+/* Controls Color for Individual Cells */
+#R0C0 {
+    background: linear-gradient(to left top, #ff34d3e3, #c94dae);
+}

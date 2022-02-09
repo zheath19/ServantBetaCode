@@ -22,3 +22,5 @@ sizeSelection.addEventListener('change', (event) => {
   });
 
 
+// Circle Grid
+ $('.circle').height($('.circle').width());
