@@ -1,0 +1,116 @@
+/* Import Fonts */
+@font-face {
+	font-family: stem-thin;
+	src: url(Fonts/STEM/Stem-Thin.otf);
+}
+
+@font-face {
+	font-family: stem-bold;
+	src: url(Fonts/STEM/Stem-Bold.otf);
+}
+
+@font-face {
+	font-family: stem;
+	src: url(Fonts/STEM/Stem-Regular.otf);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: stem, sans-serif;
+	color: #ee6369; 
+    background-color: #94c7d8;
+}
+.page-wrapper {
+    padding:20px;
+    
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-family: stem-bold;
+    size: 60pt; 
+}
+
+h2 {
+    font-family: stem-bold;
+    size: 45pt; 
+    color: #0caba4;
+}
+#curr-plate-header {
+    text-align: center;
+}
+
+header {
+    height: 10%;
+    margin-bottom: 20px;
+}
+
+/* Sectioning Well Plate customization into two columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*Holds the Changing Image of Well Plate*/
+#current-well-plate {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 100%;
+    max-height: 100%;
+    height:100%;
+    width:100%;
+}
+
+/*Button Styling*/
+button {
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    /*padding: 15px 32px;
+    margin: 10px, 25px, 10px, 25px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    font-size: 16px;
+}
+
+.navbutton {
+    
+    display: inline-block;
+    font-family: stem, sans-serif;
+    background-color:rgb(87,158,210, 0.85);
+    color: rgba(240, 77, 86, 0.95);
+    text-align: center;
+
+    border-radius: 5px;
+    border-color: #ee6369;
+    border-style: double;
+
+    padding: 14px 16px;
+    width:fit-content;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar {
+    margin-top: 15px;
+}
