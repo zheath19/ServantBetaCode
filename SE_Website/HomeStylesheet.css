@@ -115,10 +115,32 @@ button {
     margin-top: 15px;
 }
 
+/* Error Text Displayed under begin exchange button */
+#error-text {
+    color: red;
+    font-size: larger;
+    display: none;
+}
+
+
+/* Elements displayed during media exhange */
+#exchange-info {
+    display:visible;
+    height: 500px;
+    width: 50%;
+}
+#stop-button {
+    display: none;
+}
+#cancel-button {
+    float: right;
+    display: none;
+}
+
 /* Well Plate Animation */
 #cell-grid {
-    height: 35%;
-    width: 35%;
+    height: auto;
+    width: auto;
     border: 1px solid black;
     padding: 5px;
     overflow: hidden;
@@ -126,13 +148,16 @@ button {
 }
 .circle {
     z-index: 10;
-    background-color: white;
+    background: white;
     border:2px solid black;
     border-radius:50%;
-    width:33%;
+    height:18%;
+    width:18%;
     float:left;
     margin:0;
     padding:0;
+
+    cursor: pointer;
 }
 .cell-row{
     clear:left;
@@ -140,5 +165,5 @@ button {
 
 /* Controls Color for Individual Cells */
 #R0C0 {
-    background: linear-gradient(to left top, #ff34d3e3, #c94dae);
+    background: white;
 }
