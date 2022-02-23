@@ -122,6 +122,29 @@ function toggleElements() {
         // Display Error message if no data is returned from search
             console.log("Uh oh");
         });
+
+    });
+
+    const dispenseButton = document.querySelector("#dispense-button");
+    
+    dispenseButton.addEventListener('click', function(e) {
+        // Using fetch to get data
+        //https://cors-anywhere.herokuapp.com/
+        pythonurl = 'http://10.144.13.13:3000/pythondispense'
+        
+        fetch(pythonurl)
+            .then((response) => {
+            return response.text();
+        })
+        .then((data) => {
+            console.log(data);
+        })
+        .catch (err => {
+        // Display Error message if no data is returned from search
+            console.log("Uh oh");
+        });
+
+
     });
 
 
