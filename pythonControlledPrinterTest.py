@@ -13,7 +13,7 @@ from octoprint_cli.api import api
 pathToFiles = "6wellplate/"
 gcodeFiles = ["startwell1.gcode", "well2.gcode", "well3.gcode", "well4.gcode", "well5.gcode", "well6.gcode", "end.gcode"]
 
-caller = api("http://octopi.local", "505F05F1B9F3462197F2969780BC675C", verbose=False)
+caller = api("http://10.144.13.13:88", "4AA2ACB8B0DF46479FCB03F9FDC17A60", verbose=False)
 
 if not caller.connectionTest():
     print("cannot reach server")
