@@ -109,7 +109,7 @@ function toggleElements() {
     pythonButton.addEventListener('click', function(e) {
         // Using fetch to get data
         //https://cors-anywhere.herokuapp.com/
-        pythonurl = 'http://127.0.0.1:3000/pythonhello'
+        pythonurl = 'http://10.144.13.13:3000/pythonhello'
         
         fetch(pythonurl)
             .then((response) => {
