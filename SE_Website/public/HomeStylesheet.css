@@ -139,12 +139,11 @@ button {
 
 /* Well Plate Animation */
 #cell-grid {
-    height: auto;
-    width: auto;
+    height: 1000;
+    width: 1000;
     border: 1px solid black;
     padding: 5px;
     overflow: hidden;
-    
 }
 .circle {
     z-index: 10;

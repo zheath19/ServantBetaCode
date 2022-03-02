@@ -6,7 +6,6 @@ var plateImg = document.getElementById('current-well-plate');
 // Circle Grid
 $('.circle').height($('.circle').width());
 
-
 // On update to size selection update image of well plate
 sizeSelection.addEventListener('change', (event) => {
     var size = sizeSelection.options[sizeSelection.selectedIndex].text;
